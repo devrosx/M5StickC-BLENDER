@@ -1,11 +1,13 @@
-Experimental conection between M5StickC and Blender. With this you can use gyroscpe values and move/rotate object in Blender.
+Experimental conection between M5StickC and Blender. With this you can use gyroscope or Angle sensor values and move/rotate object in Blender. Script should work with M5stack and M5stackFire devices (untested).
+
 
 ## How to use
-# Flash M5StickC with UIFlow
+Choose sensor folder you want to use.
+# Flash M5StickC with latest UIFlow
 # Configure mqqt server
-Use rshell to conect M5StickC serial port
-Configure WIFI and MQQT in main.py file...
-Upload boot.py main.py 
+Use rshell to connect M5StickC serial port
+Configure WIFI and MQQT server in main.py file...
+Upload boot.py main.py with rshell command
 ``` 
 rshell -p (your serial port)
 cp boot.py /flash
@@ -33,4 +35,5 @@ If it works you can try rotation.blend file
 on OSX is recomended to run from terminal (/Applications/blender.app/Contents/MacOS/blender on my machine)
 to see python output...
 
-Rotation is not perfect, but it works...
+# BUGS
+Rotation with angle sensor is not perfect, but it works...
